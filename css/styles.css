@@ -152,27 +152,37 @@ img {
 
 .hero-part {
   background-color: #2e2f42;
-  padding-top: 188px;
-  padding-bottom: 188px;
+  padding-top: 72px;
+  padding-bottom: 72px;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url("../images/bgimg.jpg");
+    url("../images/bgimg-mobile.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  max-width: 1440px;
+  max-width: 320px;
   margin: 0 auto;
 }
 
+@media screen and (min-resolution: 2dppx), (-webkit-min-device-pixel-ratio: 2) {
+  .hero-part {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../images/bgimg-mobile-2x.jpg");
+  }
+}
+
 .hero-part-title {
-  font-size: 56px;
-  line-height: 1.07;
+  font-size: 36px;
+  line-height: 1.11;
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
-  max-width: 496px;
+  max-width: 216px;
   margin: 0 auto;
 }
 
@@ -191,7 +201,7 @@ img {
   padding-top: 16px;
   padding-bottom: 16px;
   border-radius: 4px;
-  margin-top: 48px;
+  margin-top: 72px;
   min-width: 169px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -244,10 +254,15 @@ img {
 
 /* team part */
 
+.team-part > .container {
+  padding-left: 28px;
+  padding-right: 28px;
+}
+
 .team-part {
   background-color: #f4f4fd;
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
 .team-part-title {
@@ -262,14 +277,15 @@ img {
 
 .team-part-list {
   display: flex;
-  gap: 24px;
+  flex-wrap: wrap;
+  row-gap: 72px;
+  column-gap: 0px;
   margin: 0 auto;
 }
 
 .team-part-item {
   background-color: #fff;
   border-radius: 0 0 4px 4px;
-  flex-basis: calc((100% - 72px) / 4);
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
@@ -786,6 +802,42 @@ img {
     max-width: 768px;
   }
 
+  /* hero part */
+
+  .hero-part {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../images/bgimg-tablet.jpg");
+    padding-top: 112px;
+    padding-bottom: 112px;
+    max-width: 768px;
+  }
+
+  @media screen and (min-resolution: 2dppx),
+    (-webkit-min-device-pixel-ratio: 2) {
+    .hero-part {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url("../images/bgimg-tablet-2x.jpg");
+    }
+  }
+
+  .hero-part-title {
+    font-size: 56px;
+    line-height: 1.07;
+    max-width: 496px;
+  }
+
+  .hero-part-btn {
+    margin-top: 36px;
+  }
+
+  /* achievement part */
+
   .achievement-part-list {
     column-gap: 24px;
   }
@@ -797,6 +849,22 @@ img {
   .achievement-part-subtitle {
     text-align: left;
   }
+
+  /* team part */
+
+  .team-part > .container {
+    padding-left: 108px;
+    padding-right: 108px;
+  }
+
+  .team-part-list {
+    row-gap: 64px;
+    column-gap: 24px;
+  }
+
+  .team-part-item {
+    flex-basis: calc((100% - 24px) / 2);
+  }
 }
 
 /* media DESKTOP */
@@ -807,6 +875,36 @@ img {
     padding-left: 15px;
     padding-right: 15px;
   }
+
+  /* hero part */
+
+  .hero-part {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../images/bgimg.jpg");
+    padding-top: 188px;
+    padding-bottom: 188px;
+    max-width: 1440px;
+  }
+
+  @media screen and (min-resolution: 2dppx),
+    (-webkit-min-device-pixel-ratio: 2) {
+    .hero-part {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url("../images/bgimg-2x.jpg");
+    }
+  }
+
+  .hero-part-btn {
+    margin-top: 48px;
+  }
+
+  /* achievement part */
 
   .achievement-part {
     padding-top: 120px;
@@ -845,5 +943,25 @@ img {
 
   .achievement-part-text {
     font-weight: 400;
+  }
+
+  /* team part */
+
+  .team-part {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .team-part > .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .team-part-list {
+    flex-wrap: nowrap;
+    gap: 24px;
+  }
+  .team-part-item {
+    flex-basis: calc((100% - 72px) / 4);
   }
 }
