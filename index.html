@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="container">
         <nav class="header-navigation">
           <a href="./index.html" class="header-logo"
@@ -54,8 +54,88 @@
             </li>
           </ul>
         </address>
+        <button type="button" class="header-btn">
+          <svg class="header-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-header-menu"></use>
+          </svg>
+        </button>
       </div>
-    </header> -->
+      <!-- hidden by default / to open menu use second class "is-open" -->
+      <div class="mobile-menu">
+        <div class="mobile-top-part">
+          <button type="button" class="mobile-menu-btn">
+            <svg class="mobile-menu-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <nav class="mobile-navigation">
+            <ul class="mobile-menu-list">
+              <li class="mobile-menu-item">
+                <a
+                  href="./index.html"
+                  class="mobile-menu-link mobile-active-link"
+                  >Studio</a
+                >
+              </li>
+              <li class="mobile-menu-item">
+                <a href="./index.html" class="mobile-menu-link">Portfolio</a>
+              </li>
+              <li class="mobile-menu-item">
+                <a href="./index.html" class="mobile-menu-link">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="mobile-bottom-part">
+          <address class="mobile-contacts">
+            <ul class="mobile-contacts-list">
+              <li class="mobile-contacts-item">
+                <a href="mailto:info@devstudio.com" class="mobile-contacts-link"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="mobile-contacts-item">
+                <a
+                  href="tel:+110001111111"
+                  class="mobile-contacts-link mobile-active-link"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+          </address>
+          <ul class="mobile-social-list">
+            <li class="mobile-social-item">
+              <a href="" class="mobile-social-link">
+                <svg class="mobile-social-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-social-item">
+              <a href="" class="mobile-social-link">
+                <svg class="mobile-social-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-social-item">
+              <a href="" class="mobile-social-link">
+                <svg class="mobile-social-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-social-item">
+              <a href="" class="mobile-social-link">
+                <svg class="mobile-social-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
     <main class="content">
       <section class="hero-part">
         <div class="container">
@@ -634,6 +714,7 @@
         </div>
       </div>
     </footer>
+    <!-- hidden by default / to open menu use second class "is-open" -->
     <div class="backdrop">
       <div class="modal">
         <button type="button" class="modal-close-btn">
