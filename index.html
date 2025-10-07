@@ -715,7 +715,7 @@
       </div>
     </footer>
     <!-- hidden by default / to open menu use second class "is-open" -->
-    <div class="backdrop">
+    <div class="backdrop is-open">
       <div class="modal">
         <button type="button" class="modal-close-btn">
           <svg class="modal-close-icon" width="8" height="8">
@@ -773,22 +773,27 @@
               id="user-comment"
               class="modal-description"
               placeholder="Text input"
-            ></textarea>
+            >
+            </textarea>
           </div>
-          <div class="modal-lower-part">
+          <div class="modal-accept">
             <input
               type="checkbox"
               name="user-privacy"
               id="user-privacy"
-              class="modal-chkbx visually-hidden"
+              class="modal-origin-checkbox visually-hidden"
               value="true"
             />
-            <label for="user-privacy" class="modal-text">
-              <span class="modal-accept"
-                ><svg class="modal-check-icon" width="10" height="8">
-                  <use href="./images/icons.svg#icon-check"></use></svg></span
-              >I accept the terms and conditions of the
-              <a href="" class="modal-link">Privacy Policy</a>
+            <label for="user-privacy" class="modal-accept-label">
+              <span class="modal-accept-checkbox">
+                <svg class="modal-accept-icon" width="10" height="8">
+                  <use href="./images/icons.svg#icon-check"></use>
+                </svg>
+              </span>
+              <span class="modal-accept-text"
+                >I accept the terms and conditions of the
+                <a href="" class="modal-accept-link">Privacy Policy</a>
+              </span>
             </label>
           </div>
           <button type="submit" class="modal-submit">Send</button>

@@ -233,7 +233,7 @@ img {
   display: block;
   font-weight: 700;
   font-size: 36px;
-  line-height: 111%;
+  line-height: 1.11;
   letter-spacing: 0.02em;
   color: #2e2f42;
 }
@@ -250,7 +250,7 @@ img {
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
-  line-height: 120%;
+  line-height: 1.2;
   letter-spacing: 0.02em;
   color: inherit;
 }
@@ -493,7 +493,7 @@ img {
 
 .portfolio-part-annotation {
   font-size: 1;
-  line-height: 150%;
+  line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
   position: absolute;
@@ -590,7 +590,7 @@ img {
 .footer-social-text {
   font-weight: 500;
   font-size: 16px;
-  line-height: 150%;
+  line-height: 1.5;
   letter-spacing: 0.02em;
   color: #fff;
   margin-bottom: 16px;
@@ -702,7 +702,7 @@ img {
 .modal {
   border-radius: 4px;
   width: 288px;
-  height: 623px;
+  min-height: 623px;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
     0 2px 1px 0 rgba(0, 0, 0, 0.2);
   background: #fcfcfc;
@@ -751,7 +751,7 @@ img {
 
 .modal-title {
   font-weight: 500;
-  line-height: 150%;
+  line-height: 1.5;
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
@@ -766,7 +766,7 @@ img {
   color: #8e8f99;
   font-weight: 400;
   font-size: 12px;
-  line-height: 117%;
+  line-height: 1.17;
   letter-spacing: 0.04em;
   display: block;
   margin-bottom: 4px;
@@ -826,7 +826,7 @@ img {
 .modal-description::placeholder {
   font-weight: 400;
   font-size: 12px;
-  line-height: 117%;
+  line-height: 1.17;
   letter-spacing: 0.04em;
   color: rgba(46, 47, 66, 0.4);
 }
@@ -835,26 +835,28 @@ img {
   margin-bottom: 16px;
 }
 
-.modal-lower-part {
+.modal-accept {
   margin-bottom: 24px;
 }
 
-.modal-text {
+.modal-accept-label {
   font-weight: 400;
   font-size: 12px;
-  line-height: 117%;
+  line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
+  display: flex;
+  align-items: center;
 }
 
-.modal-link {
-  line-height: 133%;
+.modal-accept-link {
+  line-height: 1.33;
   text-decoration: underline;
   text-decoration-skip-ink: none;
   color: #4d5ae5;
 }
 
-.modal-accept {
+.modal-accept-checkbox {
   width: 16px;
   height: 16px;
   border-radius: 2px;
@@ -869,9 +871,10 @@ img {
     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   display: inline-flex;
+  flex-shrink: 0;
 }
 
-.modal-chkbx:checked + .modal-text > .modal-accept {
+.modal-origin-checkbox:checked + .modal-accept-label > .modal-accept-checkbox {
   background-color: #404bbf;
   border-color: #404bbf;
   fill: #f4f4fd;
@@ -889,7 +892,7 @@ img {
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
-  line-height: 150%;
+  line-height: 1.5;
   letter-spacing: 0.04em;
   text-align: center;
   color: #fff;
